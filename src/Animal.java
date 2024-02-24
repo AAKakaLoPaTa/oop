@@ -57,6 +57,15 @@ public class Animal {
     private void sleep() {
         System.out.println("Animal sleeping");
     }
+    public void toGo(){
+        System.out.println("Animal is going");
+    }
+    public void fly(){
+        System.out.println("Animal is flying");
+    }
+    public void swim(){
+        System.out.println("Animal is swimming");
+    }
     @Override
     public String toString() {
         return "Animal{" +
@@ -65,6 +74,6 @@ public class Animal {
                 ", vaccinations=" + vaccinations +
                 ", illness='" + illness + '\'' +
                 ", owner='" + owner + '\'' +
-                '}';
+                "}\n";
     }
 }

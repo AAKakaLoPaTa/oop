@@ -12,4 +12,7 @@ public class Cat extends Animal {
     public int getLegsCount() {
         return legsCount;
     }
+    public void fly(){
+        System.out.println("Animal not flying!");
+    }
 }
