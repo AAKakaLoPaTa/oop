@@ -1,3 +1,5 @@
+package lesson2;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +33,7 @@ public class Main {
                 "bloating",
                 "boss"
         );
+
         System.out.println(barsik);
         System.out.println(barsik);
         List<Animal> animals = new ArrayList<>();
@@ -40,10 +43,14 @@ public class Main {
         animals.add(dorry);
 //        eagle.wakeup();
 //        eagle.wakeup(2);
-        barsik.lifeCycle();
-        barsik.fly();
-        barsik.swim();
-        System.out.println(animals);
-
+//        barsik.lifeCycle();
+//        barsik.fly();
+//        barsik.swim();
+        System.out.println(eagle.type);
+        System.out.println(barsik.type);
+        VeterinaryClinic clinic = new VeterinaryClinic();
+        clinic.addPatients(donald,dorry,eagle, barsik);
+        System.out.println(clinic.getPatients());
+        System.out.println(clinic.getGoables());
     }
 }
